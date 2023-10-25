@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro Usuário</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Usuario.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+<body>
+    <h1>Cadastro de usuário</h1>
+<table>
+
+    <tr>
+        <td><label>Id:</label></td>
+        <td><input type="text" id="id" disabled></td>
+    </tr>
+
+    <tr>
+        <td><label>Nome:</label></td>
+        <td><input type="text" id="nome" placeholder="Insira o nome"></td>
+    </tr>
+
+    <tr>
+        <td><label>Sobrenome:</label></td>
+        <td><input type="text" id="sobrenome" placeholder="Insira o sobrenome"></td>
+    </tr>
+
+    <tr>
+        <td><label>Email:</label></td>
+        <td><input type="email" id="email" placeholder="Insira o email"></td>
+    </tr>
+
+    <tr>
+        <td><label>Admin:</label></td>
+        <td><input type="checkbox" id="admin"></td>
+    </tr>
+
+    <tr>
+        <td><label>Senha:</label></td>
+        <td><input type="password" id="senha" placeholder="Insira a senha"></td>
+    </tr>
+
+    <tr>
+        <td><label>Data de nascimento:</label></td>
+        <td><input type="date" id="dataNascimento"></td>
+    </tr>
+
+    <tr>
+        <td><label>Profile:</label></td>
+    
+        <td><select id="selectP" name="selectP"></select></td>
+    </tr>
+    
+    <tr><td colspan="2"></td></tr>
+    <tr>
+        <td colspan="2">
+            <button id="btnSalvar">Salvar</button>
+            <button id="btnApagar">Apagar</button>
+        </td>
+    </tr>
+</table>
+
+<hr>
+<table>
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Email</th>
+        <th>Senha</th>
+        <th>Data de nascimento</th>
+        <th>Profile</th>
+        <th>Opções</th>
+        </tr>
+    </thead>
+</table>
+</hr>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

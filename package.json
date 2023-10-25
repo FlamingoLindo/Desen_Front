@@ -1,0 +1,21 @@
+{
+  "name": "trabalho-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel Cadastro_de_Atividades.html",
+    "build": "parcel build Cadastro_de_Usuario.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@types/regenerator-runtime": "^0.13.3",
+    "parcel-bundler": "^1.12.5"
+  }
+}
