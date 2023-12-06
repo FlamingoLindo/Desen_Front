@@ -3,17 +3,27 @@
 <head>
     <meta charset='utf-8'>
     <title>Cadastro Atividade</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Atividade.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src ="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 </head>
 
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
 
 <body>
+    <a href="Tela_Inicial.html" class="tela_Inicial">Início</a>
     <h1>Cadastro de tarefas</h1>
 <table>
 
     <tr>
+        <td><label>Id:</label></td>
+        <td><input type="text" id="id" disabled></td>
+    </tr>
+
+    <tr>
         <td><label>Usuário:</label></td>
-    
         <td><select id="selectU" name="selectU"></select></td>
     </tr>
 
@@ -29,7 +39,7 @@
 
     <tr>
         <td><label>Ícone da tarefa:</label></td>
-        <td><input type="image" id="iconeTarefa"></td>
+        <td><input type="text" id="iconeTarefa" placeholder="URL"></td>
     </tr>
 
     <tr>
@@ -39,7 +49,7 @@
 
     <tr>
         <td><label>Repetir tarefa?</label></td>
-        <td><input type="checkbox" id="repticaoTarefa"></td>
+        <td><input type="checkbox" id="reptirTarefa"></td>
     </tr>
 
     <tr>
@@ -67,22 +77,10 @@
     </tr>
 </table>
 
+
+
 <hr>
-<table>
-    <thead>
-        <tr>
-        <th>Id</th>
-        <th>Nome da tarefa</th>
-        <th>Descrição da tarefa</th>
-        <th>Ícone da tarefa</th>
-        <th>Cor da tarefa</th>
-        <th>Repetir tarefa</th>
-        <th>Frequência da tarefa</th>
-        <th>Data de encerramento</th>
-        <th>Lembrete</th>
-        </tr>
-    </thead>
-</table>
+<table id="table_Task" class="cell-border" ></table>
 </hr>
 
 <script src="js/atividades.js"></script>

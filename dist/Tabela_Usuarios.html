@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tabela Usuário</title>
+    <link rel="stylesheet" type="text/css" href="/Usuario.997a6004.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="/Usuario.997a6004.js"></script></head>
+
+<body>
+    <a href="/Tela_Inicial.html" class="tela_Inicial">Início</a>
+    <h1>Tabela de usuários</h1>
+
+    <table>
+        <tr>
+            <td><label for="id">Id:</label></td>
+            <td><input type="text" id="id" disabled=""></td>
+        </tr>
+
+        <tr>
+            <td><label for="nome">Nome:</label></td>
+            <td><input type="text" id="nome" placeholder="Insira o nome"></td>
+        </tr>
+
+        <tr>
+            <td><label for="sobrenome">Sobrenome:</label></td>
+            <td><input type="text" id="sobrenome" placeholder="Insira o sobrenome"></td>
+        </tr>
+
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" placeholder="Insira o email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="admin">Admin:</label></td>
+            <td><input type="checkbox" id="admin"></td>
+        </tr>
+
+        <tr>
+            <td><label for="senha">Senha:</label></td>
+            <td><input type="password" id="senha" placeholder="Insira a senha"></td>
+        </tr>
+
+        <tr>
+            <td><label for="dataNascimento">Data de nascimento:</label></td>
+            <td><input type="date" id="dataNascimento"></td>
+        </tr>
+
+        <tr>
+            <td><label for="selectP">Profile:</label></td>
+            <td><select id="selectP" name="selectP"></select></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <button id="btnSalvar">Salvar</button>
+                <button id="btnApagar">Apagar</button>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <table id="table_User" class="cell-border"></table>
+    
+
+    <script src="/tabela_usuario.a3b5a0cf.js"></script>
+</body>
+</html>

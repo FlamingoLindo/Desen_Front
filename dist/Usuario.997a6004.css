@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -37,29 +36,75 @@ tr:nth-child(even) {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="date"] {
-    width: 100%;
+input[type="date"],
+input[type="checkbox"] {
+    width: 93%;
     padding: 8px;
     margin: 5px 0;
-}
-
-input[type="checkbox"] {
-    margin: 5px 0;
+    display: block; /* Ensures each input is on a new line */
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #8c62ad;
+    padding: 12px 24px;
     color: #ffffff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #8c62ad;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #7837aa;
 }
 
-/* Add additional styling as needed for your specific design */
+#table_User {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#table_User th, #table_User td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#table_User th {
+    background-color: #f2f2f2;
+}
+
+#edit,
+#delete {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#edit {
+    background-color: #04AA6D;
+}
+
+#edit:hover {
+    background-color: #038a58;
+}
+
+#delete {
+    background-color: #ff0000;
+}
+
+#delete:hover {
+    background-color: #c70404;
+}
+
+.tela_Inicial {
+    float: left;
+    background-color: rgba(140, 98, 173, 0.8);
+    border: 5px solid #fff;
+    margin: 10px;
+    width: fit-content;
+    padding: 7px;
+}
 
 
 /*# sourceMappingURL=/Usuario.997a6004.css.map */

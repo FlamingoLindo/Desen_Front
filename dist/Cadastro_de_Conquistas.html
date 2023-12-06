@@ -3,14 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Cadastro Conquistas</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="/Conquistas.07abb430.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="/Conquistas.07abb430.js"></script></head>
 
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
 
 <body>
+    <a href="/Tela_Inicial.html" class="tela_Inicial">Início</a>
     <h1>Cadastro de conquistas</h1>
 <table>
 
+    <tr>
+        <td><label>Id:</label></td>
+        <td><input type="text" id="id" disabled=""></td>
+    </tr>
+    
     <tr>
         <td><label>Usuário:</label></td>
     
@@ -33,14 +44,7 @@
 </table>
 
 <hr>
-<table>
-    <thead>
-        <tr>
-        <th>Id</th>
-        <th>Conquista</th>
-        <th>Opções</th>
-        </tr>
-    </thead>
+<table id="table_Achievements">
 </table>
 
 
